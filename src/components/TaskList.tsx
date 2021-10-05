@@ -38,9 +38,9 @@ export function TaskList() {
     var tasksTemp = [... tasks]
     const taskMain = tasksTemp.find( ( tasks ) => tasks.id === id)
     if( taskMain != null ){
-    const deleteTask = tasks.indexOf(taskMain)
-    tasks.splice(deleteTask, 1)
-    setTasks([... tasks])
+      const deleteTask = tasks.indexOf(taskMain)
+      tasks.splice(deleteTask, 1)
+      setTasks([... tasks])
     }
   }
 
